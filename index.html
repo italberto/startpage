@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Italberto's Start Page</title>
+	
+	
+	<!-- Css Painel de Cartões -->
+	<link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Css menu touch -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-swipe-nav.css" media="all" />
+
+
+	
+	<link rel="stylesheet" type="text/css" href="css/style-modal.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.modallink-1.0.0.css" />
+	
+	
+	<!-- Javascripts painel de cartões -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/mp.mansory.js"></script>
+	<!-- Javascripts menu touch -->
+	<!--<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-swipe-nav-plugin.js"></script>
+	
+	
+    <script type="text/javascript" src="js/jquery.modalLink-1.0.0.js"></script>
+	
+	
+	
+	<!-- Javascripts menu touch -->
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			//Google Font
+			WebFontConfig = {
+				google: { families: [ 'Raleway::latin' ] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+
+			//Page Action
+			$(document).on('click','#swipeNav li a',function(){
+				var href= $(this).attr("href");
+				switch(href){
+					case '#license':
+						$('#main').load('license.html');
+						return false;
+					break;
+					case '#src':
+						$('#main').load('src.html');
+						return false;
+					break;
+				}
+			});
+
+			//jQueryPlug-in Slide-Nav
+			$('#swipeNav').swipeNav();
+		});
+	</script>
+	
+	<!-- Css menu touch -->
+	<style type="text/css">
+		body{
+			font-family: 'Raleway', sans-serif;
+		background-color:#0079BF;
+		}
+		#container{
+			position: relative;
+			padding: 20px;
+		}
+		#container #main{
+			display: block;
+			width: 70%;
+			margin: 70px auto 0;
+		}
+	</style>
+	
+	<style>
+		#rodape-info div{
+			margin:20px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	
+	<!-- Início do menu touch -->
+	<nav id="swipeNav">
+		  <ul>
+			<li><a href="#"><a href="http://google.com" class="modal-link">Calendário</a></a></li>
+			<li><a href="#">Contatos</a></li>
+			<li><a href="#">Sobre</a></li>	
+		  </ul>
+	</nav>
+	<div id="container">
+		<img src="img/list-icon.png" alt="" width="24" height="24" id="menuBtn" />
+		<div id="main">
+			
+		</div><!-- /#main -->
+	</div><!-- /#container -->
+	<!-- Fim do menu touch -->	
+
+
+	<div class="container" >
+		<div class="" id="my-gallery-container">
+			<div class="item" data-order="1">
+				<p>Gmail</p>
+				<a href="https://mail.google.com" target="g1">
+					<img src="img/logos/gmail.png"/>
+				</a>
+			</div>
+			<div class="item h200" data-order="2">
+				<p>Trello</p>
+				<a href="https://trello.com/b/iATNMFcY/hu" target="g1111">
+					<img src="img/logos/trello.png"/>
+				</a>
+			</div>
+			<div class="item h250" data-order="3">
+				<p>Correio EBSERH</p>
+				<a href="http://correio.ebserh.gov.br" target="g3">
+					<img src="img/logos/correio_ebserh.png"/>
+				</a>
+			</div>
+			<div class="item h250" data-order="3">
+				<p>Evernote</p>
+				<a href="http://evernote.com" target="g4">
+					<img src="img/logos/evernote.png"/>
+				</a>
+			</div>
+			<div class="item h150" data-order="4">
+				<p>SISAH</p>
+				<a href="http://sisah.ufpi.br" target="g5">
+					<img src="img/logos/sisah.png"/>
+				</a>
+			</div>
+			<div class="item h100" data-order="5">
+				<p>AGHU</p>
+				<a href="https://aghu.ufpi.br" target="g6">
+					<img src="img/logos/aghu.png"/>
+				</a>
+			</div>
+			<div class="item" data-order="6">
+				<p>Redmine</p>
+				<a href="http://redminehu.ufpi.br" target="g7">
+					<img src="img/logos/redmine.png"/>
+				</a>
+			</div>
+			<div class="item h150" data-order="7">
+				<p>SAPE</p>
+				<a href="http://sape.ebserh.gov.br" target="g8">
+					<img src="img/logos/sape.png"/>
+				</a>
+			</div>
+			<div class="item h150" data-order="8">
+				<p>Wiki-HU</p>
+				<a href="https://wikinhu.ufpi.br" target="g9">
+					<img src="img/logos/wiki.png"/>
+				</a>
+			</div>
+			<div class="item h100" data-order="9">
+				<p>OpenFire</p>
+				<a href="https://openfire.ufpi.br" target="g00">
+					<img src="img/logos/openfire.png"/>
+				</a>
+			</div>
+			<div class="item" data-order="10">
+				<p>GitWeb</p>
+				<a href="http://10.52.90.19/gitweb" target="g76">
+					<img src="img/logos/git.png"/>
+				</a>
+			</div>
+			<div class="item h200" data-order="11">
+				<p>Nexus</p>
+				<a href="http://10.52.90.19:8081/nexus/index.html#welcome" target="g55">
+					<img src="img/logos/nexus.png"/>
+				</a>
+			</div>
+			<div class="item h100 yellow" data-order="12" style="background-color: #ffcc00;">
+				<p>SISAH - Homologação</p>
+				<a href="http://10.52.90.56/sisah" target="f4">
+					<img src="img/logos/sisah.png"/>
+				</a>
+			</div>
+			<div class="item h100" data-order="13" style="background-color: #ffcc00;">
+				<p>AGHU - Homologação</p>
+				<a href="https://aghu.ufpi.br/stg-aghu" target="f7">
+					<img src="img/logos/aghu.png"/>
+				</a>
+			</div>
+			<div class="item" data-order="14">
+				<p>Ramais</p>
+				<a href="http://sisah.ufpi.br/ramal/view/public/ramal/pesquisa.jsf" target="blank">
+					<img src="img/logos/fone.png"/>
+				</a>
+			</div>			
+		</div>
+	</div>
+
+
+	<div class="rodape-info">
+		italberto@gmail.com
+	</div>
+	<!-- Início do Script do painel de cartões -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ( $ ) {
+			$("#my-gallery-container").mpmansory(
+				{
+					childrenClass: 'item', // default is a div
+					columnClasses: 'padding', //add classes to items
+					breakpoints:{
+						lg: 3, 
+						md: 4, 
+						sm: 6,
+						xs: 12
+					},
+					distributeBy: { order: false, height: false, attr: 'data-order', attrOrder: 'asc' }, //default distribute by order, options => order: true/false, height: true/false, attr => 'data-order', attrOrder=> 'asc'/'desc'
+					onload: function (items) {
+						//make somthing with items
+					} 
+				}
+			);
+		});
+	</script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<!-- Fim do Script do painel de cartões -->
+
+	<script type="text/javascript">
+
+            (function () {
+                $(".modal-link").modalLink();
+
+                $(".modal-link-with-data").modalLink({
+                    data: {
+                        foo: "bar"
+                    }
+                });
+
+                $(".modal-link-posting-data").modalLink({
+                    method: "POST",
+                    data: {
+                        foo: "bar"
+                    }
+                });
+
+                $(".btn-click-me").click(function () {
+                    $.modalLink.open("Page1.html", {
+                        title: "Title"
+                    });
+                });
+
+                $(".btn-ref").click(function (e) {
+                    e.preventDefault();
+                    $.modalLink("open", $(".btn-ref"), {
+                        title: "REF demo - type something in textbox and close window"
+                    });
+                });
+
+                $(".post-data-to-iframe").submit(function (e) {
+                   e.preventDefault();
+                   var $form = $(this);
+                   if ($form.data("submitted-from-modallink")) {
+                       $form.data("submitted-from-modallink", false);
+                       return;
+                   }
+
+                   var url = $form.attr("action");
+                   $.modalLink.open(url, {
+                       $form: $form,
+                       title: "Posting form to modal window demo",
+                       method: "POST"
+                   })
+                });
+            })();
+
+        </script>
+	
+</body>
+</html>
